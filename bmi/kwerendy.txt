@@ -1,0 +1,4 @@
+select wart_min, wart_max from bmi;
+insert into wynik(bmi_id,data_pomiaru,wynik) VALUES ('3', '2020-05-10', '27');
+SELECT wynik.wynik, wynik.data_pomiaru FROM wynik, bmi WHERE wynik.bmi_id LIKE bmi.id;
+SELECT wart_min, wart_max FROM bmi WHERE wart_min >= 26 and wart_max <= 30;
